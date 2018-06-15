@@ -1,0 +1,27 @@
+{
+  "name": "codechallengeuniben1606",
+  "version": "1.0.0",
+  "description": "Creating a two way sms application",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithm-sam/CodeChallengeUniBen1606.git"
+  },
+  "author": "Oluwatobi Samuel Ohidoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/algorithm-sam/CodeChallengeUniBen1606/issues"
+  },
+  "homepage": "https://github.com/algorithm-sam/CodeChallengeUniBen1606#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
