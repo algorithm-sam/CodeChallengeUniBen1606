@@ -1,6 +1,5 @@
-# 2 Way SMS Code Challenge: University of Benin - Benin City
-## Due: 17th June,2018 or Earlier
-#### This code challenge is due on the 17th of June,2018 or earlier. 
+# How to use this service on the simulator
+
 
 ## Simple Unchanging Rules
 The code challenge is and will always be judged using the following criteria
