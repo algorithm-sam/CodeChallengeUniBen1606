@@ -29,7 +29,7 @@ function sendMessage(to,message){
     });
 
 
-    axios.post('/version1/messaging',post_data)
+    return axios.post('/version1/messaging',post_data)
     .then(resp => {
         // console.log(resp)
         resp.setEncoding('utf8');
@@ -41,12 +41,16 @@ function sendMessage(to,message){
                     logStr     += ';cost='   + recipients[i].cost;
                     logStr     += ';status=' + recipients[i].status; // status is either "Success" or "error message"
                     logStr     += ';statusCode=' + recipients[i].statusCode;
-                    console.log(logStr);
+                    return console.log(logStr);
                     }
             } 
             else {
-                    console.log('Error while sending: ' + jsObject.SMSMessageData.Message);
+                    return console.log('Error while sending: ' + jsObject.SMSMessageData.Message);
             }
+
+    })
+    .catch( err => {
+        return Promise.reject(err);
     })
 }
 

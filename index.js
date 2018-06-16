@@ -17,18 +17,17 @@ app.post('/recieveMessage',(req,res)=>{
         id
     }
     //store message to the database for future manipulation and reference purpose;
-    Message.save(messageObj)
-    .then( () => {
         
         //send the default response message to the user to acknowledge message receipt;
-        return utilities.sendMessage(from)
-    })
-    .then((resp)=>{
 
-    })
-    .catch(err => {
-        utilities.serverlog(req,err);
-    })
+        utilities.sendMessage(from)
+        .then( resp => {
+            res.send();
+        })
+        .catch(err => {
+            utilities.serverlog(req,err);
+        })
+        res.end();
 })
 
 
